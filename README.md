@@ -10,4 +10,4 @@ to reproduce my personal [wordpress blog](http://www.jthompson.ca):
 -comments
 -[draft](http://www.draftin.com) integration
 
-The minimum viable product will not include comments.
+The minimum viable product will not include comments or Draft integration.
