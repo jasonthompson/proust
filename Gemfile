@@ -43,3 +43,10 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'minitest-rails'
+gem 'therubyracer'
+
+group :test do
+  gem 'minitest-rails-capybara'
+end
