@@ -1,5 +1,7 @@
 # README
-A blog! This will be my first complete rails app.
+Proust is a blogging platform influenced by the blogging platform constructed in 
+Avdi Grimm's [Objects on Rails](http://objectsonrails.com). This will be my 
+first complete rails app.
 
 My goal is create a simple blog framework with only the features needed 
 to reproduce my personal [wordpress blog](http://www.jthompson.ca):
