@@ -1,4 +1,3 @@
-
 class Blog
   attr_accessor :entries
   attr_writer :post_source
@@ -7,8 +6,16 @@ class Blog
     @entries = []
   end
 
-  def new_post
-    post_source.call.tap do |p|
+  def title
+    "My Exciting Bog"
+  end
+
+  def add_entry(entry)
+    entries << entry
+  end
+   
+ def new_post(*args)
+    post_source.call(*args).tap do |p|
       p.blog = self
     end
   end

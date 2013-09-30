@@ -1,2 +1,10 @@
 <h1><%= @blog.title %></h1>
 
+<% @blog.entries.each do |e| %>
+<article>
+  <header>
+    <h1><%= e.title %></h1>
+  </header>
+<div class="summary"><%= e.body.html_safe %></div>
+</article>
+<% end %>

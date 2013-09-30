@@ -26,6 +26,13 @@ describe Post do
     @it.blog.must_equal blog
   end
 
+  it "supports setting attributes in the initializer" do
+    it = Post.new(title: "Yet another post about my cat",
+                  body: "This is miffy. Do you like her?")
+    it.title.must_equal "Yet another post about my cat"
+    it.body.must_equal "This is miffy. Do you like her?"
+  end
+  
   describe "#publish" do
     before do
       @blog = MiniTest::Mock.new
@@ -37,7 +44,7 @@ describe Post do
     end
 
     it "adds the post to the blog" do
-      @blog.expect :add_entry, nil, [@it]
+      @blog.expect :new_post, nil, [@it]
       @it.publish
     end
   end
